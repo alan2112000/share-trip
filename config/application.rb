@@ -24,6 +24,7 @@ module ShareTrip
     config.active_record.raise_in_transactional_callbacks = true
 
     config.autoload_paths += %W(#{config.root}/lib)
-    ::ENV = YAML.load_file("#{Rails.root}/config/env.yml")
+    config.autoload_paths += %W(#{config.root}/app/presenters)
+    ::ENV_SETTING = YAML.load_file("#{Rails.root}/config/env.yml")
   end
 end

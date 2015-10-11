@@ -18,6 +18,7 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
     }
   end
 
+
   PROVIDERS.each do |provider|
     provides_callback_for(provider)
   end
