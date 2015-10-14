@@ -22,5 +22,4 @@ public/
 
 # secrect part 
 /config/env.yml 
-/config/database.yml
 /config/secrect.yml
