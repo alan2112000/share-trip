@@ -34,7 +34,7 @@ Devise.setup do |config|
   # config.authentication_keys = [:email]
 
   # TODO: make sure to replace to env variable
-  config.omniauth :facebook, '491696820999307', 'f10261f7616657c7304bc46901b07adb'
+  config.omniauth :facebook, ENV_SETTING['facebook']['key'], ENV_SETTING['facebook']['token']
 
   # Configure parameters from the request object used for authentication. Each entry
   # given should be a request method and it will automatically be passed to the
